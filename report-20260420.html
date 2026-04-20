@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://joew00.github.io/middle-east-brief-20260420-093040/ -->
+<html lang="zh-Hant"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中東戰爭每日情報簡報 — 2026年4月20日</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./中東戰爭每日情報簡報 — 2026年4月20日_files/css2" rel="stylesheet">
+<style>
+:root {
+  --bg-primary: #0a0e17;
+  --bg-card: #111827;
+  --bg-table-header: #1e293b;
+  --bg-table-odd: #0f172a;
+  --bg-table-even: #111827;
+  --bg-table-hover: #1a2332;
+  --border: #1e293b;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-heading: #f1f5f9;
+  --accent-red: #ef4444;
+  --accent-green: #22c55e;
+  --accent-blue: #3b82f6;
+  --accent-amber: #f59e0b;
+  --accent-cyan: #06b6d4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.8;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-red), var(--accent-amber), var(--accent-red));
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.header .date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  color: var(--accent-cyan);
+}
+
+.header .subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--accent-blue);
+  display: inline-block;
+}
+
+/* Escalation indicators */
+.indicator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.indicator-item {
+  background: var(--bg-table-odd);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.indicator-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.indicator-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.indicator-value.red { color: var(--accent-red); }
+.indicator-value.amber { color: var(--accent-amber); }
+.indicator-value.green { color: var(--accent-green); }
+
+.assessment-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-top: 0.5rem;
+}
+
+.assessment-text strong {
+  color: var(--text-primary);
+}
+
+/* Summary */
+.summary-text {
+  font-size: 0.95rem;
+  line-height: 2;
+  color: var(--text-primary);
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 800px;
+}
+
+thead th {
+  background: var(--bg-table-header);
+  color: var(--text-heading);
+  font-weight: 600;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid var(--accent-blue);
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+tbody tr:nth-child(odd) { background: var(--bg-table-odd); }
+tbody tr:nth-child(even) { background: var(--bg-table-even); }
+tbody tr:hover { background: var(--bg-table-hover); }
+
+tbody td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  line-height: 1.7;
+}
+
+tbody td:first-child {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-align: center;
+  width: 2.5rem;
+}
+
+/* Direction indicators in tables */
+.dir-red { color: var(--accent-red); }
+.dir-green { color: var(--accent-green); }
+.dir-neutral { color: var(--text-secondary); }
+
+/* Links */
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+a:hover {
+  border-bottom-color: var(--accent-cyan);
+}
+
+/* Strategic implications */
+.implications-list {
+  list-style: none;
+  padding: 0;
+}
+
+.implications-list li {
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+  background: var(--bg-table-odd);
+  border-left: 3px solid var(--accent-amber);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.9;
+  font-size: 0.9rem;
+}
+
+.implications-list li strong {
+  color: var(--accent-amber);
+}
+
+/* Sources */
+.sources-list {
+  list-style: none;
+  padding: 0;
+  columns: 1;
+}
+
+.sources-list li {
+  padding: 0.4rem 0;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.sources-list li::before {
+  content: '→';
+  margin-right: 0.5rem;
+  color: var(--accent-blue);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+/* Importance badge */
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-major { background: rgba(239,68,68,0.15); color: var(--accent-red); }
+.badge-medium { background: rgba(245,158,11,0.15); color: var(--accent-amber); }
+
+/* Data highlight */
+.data {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--accent-cyan);
+}
+
+/* Print styles */
+@media print {
+  body { background: #fff; color: #1a1a1a; padding: 1rem; }
+  .card { border: 1px solid #ccc; background: #fff; }
+  .header { background: #f5f5f5; }
+  .header::before { background: #333; }
+  .header h1 { color: #111; }
+  .header .date { color: #444; }
+  thead th { background: #e5e5e5; color: #111; border-bottom-color: #333; }
+  tbody tr:nth-child(odd) { background: #fafafa; }
+  tbody tr:nth-child(even) { background: #fff; }
+  tbody tr:hover { background: #fff; }
+  a { color: #0066cc; }
+  .indicator-item { background: #f5f5f5; border-color: #ccc; }
+  .implications-list li { background: #f9f9f9; border-left-color: #e67e22; }
+  .indicator-value.red { color: #c0392b; }
+  .indicator-value.amber { color: #d35400; }
+  .indicator-value.green { color: #27ae60; }
+}
+
+@media (max-width: 768px) {
+  body { padding: 1rem 0.5rem; }
+  .card { padding: 1.2rem; }
+  .header { padding: 2rem 1rem; }
+  .header h1 { font-size: 1.3rem; }
+  .indicator-grid { grid-template-columns: 1fr; }
+  table { font-size: 0.78rem; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <h1>中東戰爭每日情報簡報</h1>
+  <div class="date">2026-04-20 | DAY 51 — 美以對伊朗戰爭（停火第 12 日）</div>
+  <div class="subtitle">MIDDLE EAST CONFLICT DAILY INTELLIGENCE BRIEF</div>
+</div>
+
+<!-- 局勢升級指標 -->
+<div class="card">
+  <h2>局勢升級指標（過去 24–48 小時）</h2>
+  <div class="indicator-grid">
+    <div class="indicator-item">
+      <span class="indicator-label">整體衝突走向</span>
+      <span class="indicator-value red">🔴 升級</span>
+    </div>
+    <div class="indicator-item">
+      <span class="indicator-label">未來 7 日升級風險</span>
+      <span class="indicator-value red">高</span>
+    </div>
+    <div class="indicator-item">
+      <span class="indicator-label">區域外溢風險</span>
+      <span class="indicator-value red">高</span>
+    </div>
+  </div>
+  <p class="assessment-text">
+    <strong>評估依據：</strong>美海軍 <span class="data">USS Spruance</span> 於荷莫茲海峽（Strait of Hormuz）附近登臨並扣押伊朗船舶；伊朗拒絕赴伊斯蘭瑪巴德（Islamabad）第二輪談判，川普（Trump）指控德黑蘭「嚴重違反停火」並威脅重啟打擊。胡塞（Houthi）揚言關閉曼德海峽（Bab al-Mandeb），以軍公布南黎巴嫩「黃線（Yellow Line）」部署圖，敘利亞宣稱挫敗真主黨（Hezbollah）跨境突襲計畫，顯示多條戰線風險同步上升。
+  </p>
+</div>
+
+<!-- 摘要 -->
+<div class="card">
+  <h2>摘要</h2>
+  <p class="summary-text">
+    停火進入第 <span class="data">12</span> 日，卻在週日（<span class="data">4/19</span>）因荷莫茲海峽事件出現最嚴重裂痕：美驅逐艦擊中伊朗貨輪引擎並控制船隻，伊朗 24 小時內相繼關閉海峽航道、宣布退出伊斯蘭瑪巴德談判，並由總統裴澤希齊安（Pezeshkian）指控華府「背叛外交」。川普稱美國談判代表週一仍將赴巴基斯坦，巴基斯坦與土耳其居中斡旋，現行停火協議將於週三（<span class="data">4/22</span>）到期，展延機率迅速下降。北線方面，以軍首度公布南黎巴嫩「黃線」控制區地圖並在艾塔沙阿卜（Ait a Shaab）部署部隊，一名以軍士兵陣亡；加薩（Gaza）前線因以軍回擊攻擊事件再起，但哈瑪斯（Hamas）釋出願交出部分內部安全武器訊號。胡塞威脅封鎖曼德海峽、敘利亞攔截真主黨越境攻擊計畫，區域外溢風險明顯升高。
+  </p>
+</div>
+
+<!-- 表一 — 關鍵事件與觀點 -->
+<div class="card">
+  <h2>表一 — 關鍵事件與觀點</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>戰爭走向</th>
+          <th>重要性</th>
+          <th>來源</th>
+          <th>事件</th>
+          <th>重點摘要</th>
+          <th>戰略影響</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="dir-red">🔴</td>
+          <td><span class="badge badge-major">重大</span></td>
+          <td><a href="https://www.npr.org/2026/04/19/nx-s1-5790378/iran-us-hormuz-closed-impossible" target="_blank">NPR</a></td>
+          <td>美軍扣押伊朗貨輪於荷莫茲海峽</td>
+          <td>川普宣布 <span class="data">USS Spruance</span> 擊穿伊朗船舶引擎室後登船接管。</td>
+          <td>美方首次在停火期間實施動能扣押行動，等同以海上封鎖施壓，大幅提高軍事誤判風險。</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="dir-red">🔴</td>
+          <td><span class="badge badge-major">重大</span></td>
+          <td><a href="https://www.haaretz.com/middle-east-news/iran/2026-04-19/ty-article/iran-isnt-sending-delegation-to-talks-with-u-s-as-trump-threatens-new-strikes/0000019d-a5d2-d31c-a1df-afd3f9ab0000" target="_blank">Haaretz</a></td>
+          <td>伊朗拒絕伊斯蘭瑪巴德第二輪談判</td>
+          <td>德黑蘭官媒 IRNA 指控華府「過度要求」，川普回稱將「夷平伊朗基礎設施」。</td>
+          <td>停火外交停擺，<span class="data">4/22</span> 到期後續約機率顯著下修，重啟空襲窗口打開。</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="dir-red">🔴</td>
+          <td><span class="badge badge-major">重大</span></td>
+          <td><a href="https://timesofindia.indiatimes.com/world/middle-east/no-force-can-reopen-it-houthis-threaten-bab-al-mandeb-closure-after-iran-shuts-hormuz/articleshow/130367491.cms" target="_blank">Times of India</a></td>
+          <td>胡塞威脅封閉曼德海峽</td>
+          <td>胡塞國防部宣布處於「高度警戒」，並稱必要時將封閉曼德海峽呼應伊朗關閉荷莫茲。</td>
+          <td>紅海與波斯灣雙海峽同步承壓，全球油輪與商船保費與航線改道壓力飆升。</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="dir-red">🔴</td>
+          <td><span class="badge badge-major">重大</span></td>
+          <td><a href="https://www.reuters.com/world/middle-east/israeli-military-publishes-map-south-lebanon-territory-under-its-control-2026-04-19/" target="_blank">Reuters</a></td>
+          <td>以軍公布南黎巴嫩「黃線」部署圖</td>
+          <td>以軍首度公開在南黎巴嫩實際控制線，並於艾塔沙阿卜部署第 <span class="data">162</span> 師；一名以軍士兵同日在南黎戰鬥中陣亡。</td>
+          <td>「黃線」可能演變為長期緩衝區，黎巴嫩停火框架承壓，第二戰線重啟機率上升。</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="dir-neutral">⚪</td>
+          <td><span class="badge badge-medium">中等</span></td>
+          <td><a href="https://www.seattletimes.com/nation-world/hamas-officials-say-group-is-ready-to-hand-over-some-weapons/" target="_blank">Seattle Times</a></td>
+          <td>哈瑪斯釋出願交出部分武器訊號</td>
+          <td>哈瑪斯表示可交出內部安全部隊的自動步槍與警用武器，範圍不含軍事翼。</td>
+          <td>為加薩停火後續階段創造外交空間，但象徵性大於實質，未觸及哈瑪斯火箭與隧道能力。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 表二 — 各戰略行為者傷亡與兵力變化 -->
+<div class="card">
+  <h2>表二 — 各戰略行為者傷亡與兵力變化</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>行為者</th>
+          <th>軍事傷亡（陣亡/受傷總計）</th>
+          <th>軍事24小時變化</th>
+          <th>平民傷亡（總計）</th>
+          <th>平民24小時變化</th>
+          <th>傷亡總計</th>
+          <th>兵力變化</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>美國</td>
+          <td><span class="data">~40</span> 陣亡 / <span class="data">~200+</span> 受傷<br>（2月開戰以來累計）</td>
+          <td>無新陣亡報告</td>
+          <td>無直接平民死亡</td>
+          <td>無新增</td>
+          <td><span class="data">~240</span></td>
+          <td>USS Spruance 進駐荷莫茲海域執行登臨扣押；沙烏地、阿聯酋基地維持高警戒</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>以色列</td>
+          <td><span class="data">~310</span> 陣亡 / <span class="data">~1,800+</span> 受傷<br>（加薩＋黎巴嫩＋伊朗戰線）</td>
+          <td>南黎巴嫩 <span class="data">1</span> 名 IDF 士兵陣亡</td>
+          <td><span class="data">~90</span> 死 / <span class="data">~450+</span> 傷（含伊朗反擊）</td>
+          <td>加薩邊境小規模受傷</td>
+          <td><span class="data">~2,650</span></td>
+          <td>第 162 師擴大南黎部署；加薩再啟「強力打擊」；北部空防維持高警戒</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>伊朗及伊朗陣營代理武裝</td>
+          <td>伊朗軍警 <span class="data">~1,100+</span> 陣亡；真主黨 <span class="data">~2,000+</span>；哈瑪斯 <span class="data">~12,000+</span>；胡塞 <span class="data">~600+</span></td>
+          <td>無大規模新陣亡確認</td>
+          <td>伊朗平民 <span class="data">~1,700+</span> 死；加薩平民 <span class="data">~60,000+</span> 死（累計）</td>
+          <td>加薩新增個位數死亡</td>
+          <td><span class="data">~77,000+</span><br>（跨戰線累計估計）</td>
+          <td>伊朗海軍 1 艘貨輪被扣；胡塞宣布「高度警戒」；真主黨透過敘利亞代理嘗試跨境攻擊遭阻</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>其他區域 / 國際行為者</td>
+          <td>無直接軍事傷亡</td>
+          <td>無新數據</td>
+          <td>葉門哈賈省（Hajjah）胡塞砲擊致平民死亡</td>
+          <td>新增數名死亡</td>
+          <td>無新數據</td>
+          <td>巴基斯坦、土耳其、卡達居中斡旋；敘利亞安全部隊攔截真主黨越境單元</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 表三 — 軍事實力與武器庫快照 -->
+<div class="card">
+  <h2>表三 — 軍事實力與武器庫快照</h2>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>國家</th>
+          <th>軍事總員額</th>
+          <th>海軍艦艇</th>
+          <th>飛彈武器庫（估計）</th>
+          <th>戰鬥機</th>
+          <th>24小時變化</th>
+          <th>來源</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>美國</td>
+          <td><span class="data">~2,860,000</span><br>（現役 1.32M＋後備 0.80M＋國民兵 0.74M）</td>
+          <td><span class="data">~290</span> 艘主要作戰艦<br>（含 11 艘航艦）</td>
+          <td>戰術與戰略飛彈 <span class="data">~4,000+</span> 枚（不含核彈頭）</td>
+          <td><span class="data">~2,400</span> 架<br>（F-35、F-22、F-15EX）</td>
+          <td>USS Spruance 進駐荷莫茲海域；阿拉伯海加強空中巡邏</td>
+          <td><a href="https://www.iiss.org/publications/the-military-balance/" target="_blank">IISS Military Balance 2026</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>以色列</td>
+          <td><span class="data">~640,000</span><br>（現役 170K＋後備 470K）</td>
+          <td><span class="data">~65</span> 艘<br>（Sa'ar 6、Dolphin II 潛艦）</td>
+          <td>Arrow、David's Sling、Iron Dome 攔截彈補充中；Jericho 彈道彈數量機密</td>
+          <td><span class="data">~340</span> 架<br>（F-35I、F-15I、F-16I）</td>
+          <td>第 162 師擴大南黎巴嫩部署；無重大新裝備</td>
+          <td><a href="https://www.jpost.com/middle-east/article-893531" target="_blank">Jerusalem Post</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>伊朗</td>
+          <td><span class="data">~1,020,000</span><br>（現役 610K＋後備 350K＋IRGC 190K）</td>
+          <td><span class="data">~100</span> 艘<br>（多為小型巡邏艦＋Kilo 潛艦）</td>
+          <td>彈道與巡弋飛彈 <span class="data">~3,000+</span> 枚<br>（Shahab、Kheibar Shekan、Paveh）</td>
+          <td><span class="data">~340</span> 架<br>（F-4、F-14、Su-24，部分升級）</td>
+          <td>1 艘貨輪遭美扣押；革命衛隊海軍宣布進入最高警戒</td>
+          <td><a href="https://missilethreat.csis.org/country/iran/" target="_blank">CSIS Iran Missile Dossier</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 戰略意涵 -->
+<div class="card">
+  <h2>戰略意涵</h2>
+  <ul class="implications-list">
+    <li><strong>停火進入技術性破局：</strong>美方動能扣押行動＋伊朗退出伊斯蘭瑪巴德談判，使 <span class="data">4/22</span> 到期的停火幾乎無展延基礎，市場應為重啟空襲、油價走高做好準備。</li>
+    <li><strong>雙海峽封鎖威脅重塑能源地緣：</strong>荷莫茲與曼德海峽同時承壓，意味全球 <span class="data">~30%</span> 海運原油與 <span class="data">~12%</span> LNG 面臨航線改道與保費飆升；亞洲（台、日、韓、印度）能源進口最敏感。</li>
+    <li><strong>以色列「黃線」模式擴張至第二戰線：</strong>南黎巴嫩 IDF 部署與控制區地圖公開，呼應西岸及敘利亞模式，短期不會全面撤軍；黎以停火脆化，真主黨重建窗口縮短，第二正面戰爭復燃機率升至本季最高。</li>
+  </ul>
+</div>
+
+<!-- 資料來源 -->
+<div class="card">
+  <h2>資料來源</h2>
+  <ul class="sources-list">
+    <li><a href="https://www.npr.org/2026/04/19/nx-s1-5790378/iran-us-hormuz-closed-impossible" target="_blank">NPR — U.S. seizes Iranian cargo ship in Strait of Hormuz</a></li>
+    <li><a href="https://www.jpost.com/middle-east/iran-news/2026-04-19/live-updates-893435" target="_blank">Jerusalem Post — Live Updates: Israel, Iran, and the Middle East</a></li>
+    <li><a href="https://www.haaretz.com/middle-east-news/iran/2026-04-19/ty-article/iran-isnt-sending-delegation-to-talks-with-u-s-as-trump-threatens-new-strikes/0000019d-a5d2-d31c-a1df-afd3f9ab0000" target="_blank">Haaretz — Iran isn't sending delegation to talks with U.S. as Trump threatens new strikes</a></li>
+    <li><a href="https://www.theguardian.com/world/2026/apr/19/intemperate-trump-brings-chaos-and-confusion-to-iran-talks" target="_blank">The Guardian — Intemperate Trump brings chaos and confusion to Iran talks</a></li>
+    <li><a href="https://time.com/article/2026/04/19/trump-accuses-iran-of-total-violation-as-strait-of-hormuz-remains-shut/" target="_blank">TIME — Iran Rejects New Peace Talks as Trump Sends Negotiators to Pakistan</a></li>
+    <li><a href="https://www.reuters.com/world/middle-east/israeli-military-publishes-map-south-lebanon-territory-under-its-control-2026-04-19/" target="_blank">Reuters — Israeli military publishes map of south Lebanon territory under its control</a></li>
+    <li><a href="https://www.aljazeera.com/news/2026/4/19/does-israels-yellow-line-violate-the-lebanon-ceasefire" target="_blank">Al Jazeera — Does Israel's 'Yellow Line' violate the Lebanon ceasefire?</a></li>
+    <li><a href="https://www.middleeasteye.net/live-blog/live-blog-update/iran-accuses-us-breaching-commitments-betraying-diplomacy" target="_blank">Middle East Eye — Iran accuses US of breaching commitments, 'betraying diplomacy'</a></li>
+    <li><a href="https://www.timesofisrael.com/syria-says-it-foiled-hezbollah-linked-cross-border-attack-planned-from-area-near-israel/" target="_blank">Times of Israel — Syria says it foiled Hezbollah-linked cross-border attack planned from area near Israel</a></li>
+    <li><a href="https://timesofindia.indiatimes.com/world/middle-east/no-force-can-reopen-it-houthis-threaten-bab-al-mandeb-closure-after-iran-shuts-hormuz/articleshow/130367491.cms" target="_blank">Times of India — Houthis threaten Bab al-Mandeb closure after Iran shuts Hormuz</a></li>
+    <li><a href="https://www.seattletimes.com/nation-world/hamas-officials-say-group-is-ready-to-hand-over-some-weapons/" target="_blank">Seattle Times — Hamas officials say group is ready to hand over some weapons</a></li>
+    <li><a href="https://www.kurdistan24.net/en/story/908734/iran-threatens-renewed-hormuz-closure-as-us-naval-blockade-strains-ceasefire-talks" target="_blank">Kurdistan 24 — Iran Threatens Renewed Hormuz Closure as U.S. Naval Blockade Strains Ceasefire Talks</a></li>
+    <li><a href="https://www.abc.net.au/news/2026-04-20/iran-israel-war-daily-news-briefing/106582220" target="_blank">ABC — Iran daily briefing: Why JD Vance might have no-one to talk to, plus Israel's new 'yellow line'</a></li>
+    <li><a href="https://www.hstoday.us/featured/u-s-and-israel-strike-iran-triggering-gulf-wide-missile-retaliation-from-tehran/" target="_blank">HSToday — Iran Conflict Update: Ceasefire Diplomacy, Death Toll Tops 5,400</a></li>
+    <li><a href="https://newlinesmag.com/reportage/us-israeli-attacks-on-iran-show-a-pattern-of-double-tap-strikes/" target="_blank">Newlines Magazine — US-Israeli Attacks on Iran Show a Pattern of 'Double-Tap' Strikes</a></li>
+  </ul>
+</div>
+
+<div class="footer">
+  中東戰爭每日情報簡報 | 2026-04-20 | 本報告僅供參考，不構成任何投資或政策建議
+</div>
+
+</div>
+
+
+</body></html>
